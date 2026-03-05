@@ -4,131 +4,463 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>JYA Reparación y Venta de Electrodomésticos</title>
+
 <style>
-body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#f5f5f5;color:#222}
-header{background:#000;color:#fff;padding:15px 20px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0}
-header h1{font-size:18px;margin:0}
-.btn{background:#25D366;color:#fff;padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:bold}
-.container{max-width:1100px;margin:auto;padding:40px 20px}
-.hero{background:#111;color:white;text-align:center;padding:80px 20px}
-.hero h2{font-size:40px;margin-bottom:20px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px}
-.card{background:white;padding:25px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.1)}
-footer{background:#000;color:#fff;text-align:center;padding:20px;margin-top:40px}
-.whatsapp{position:fixed;bottom:25px;right:25px;background:#25D366;color:#fff;padding:16px 18px;border-radius:50px;text-decoration:none;font-size:18px;box-shadow:0 6px 20px rgba(0,0,0,0.3)}
+*{box-sizing:border-box}
+body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#f4f6f8;color:#222}
+
+header{
+background:#0b0b0b;
+color:white;
+padding:15px 25px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+position:sticky;
+top:0;
+z-index:1000;
+box-shadow:0 2px 10px rgba(0,0,0,0.3)
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+font-weight:bold;
+font-size:18px
+}
+
+.logo img{height:40px}
+
+.btn{
+background:#25D366;
+color:white;
+padding:10px 18px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+transition:.2s
+}
+
+.btn:hover{transform:scale(1.05)}
+
+.hero{
+background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url("https://images.unsplash.com/photo-1581092918056-0c4c3acd3789");
+background-size:cover;
+background-position:center;
+color:white;
+text-align:center;
+padding:110px 20px
+}
+
+.hero h1{font-size:42px;margin-bottom:20px}
+.hero p{font-size:18px;max-width:700px;margin:auto;margin-bottom:25px}
+
+.container{max-width:1150px;margin:auto;padding:50px 20px}
+
+.section-title{text-align:center;margin-bottom:35px}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px}
+
+.card{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 6px 18px rgba(0,0,0,.08);
+transition:.25s
+}
+
+.card:hover{transform:translateY(-6px);box-shadow:0 10px 25px rgba(0,0,0,.15)}
+
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+
+.gallery div{
+background:white;
+padding:40px 20px;
+border-radius:12px;
+text-align:center;
+box-shadow:0 4px 12px rgba(0,0,0,.08)
+}
+
+.review{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,.08)
+}
+
+.highlight{
+background:#111;
+color:white;
+padding:60px 20px;
+text-align:center
+}
+
+.brands{text-align:center;font-size:17px;line-height:1.7}
+
+.location{text-align:center}
+
+footer{
+background:#0b0b0b;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:40px
+}
+
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25D366;
+color:white;
+padding:16px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 6px 20px rgba(0,0,0,.3);
+animation:float 2s ease-in-out infinite
+}
+
+.callbtn{
+position:fixed;
+bottom:90px;
+right:25px;
+background:#0b0b0b;
+color:white;
+padding:16px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 6px 20px rgba(0,0,0,.3)
+}
+
+@keyframes float{
+0%{transform:translateY(0)}
+50%{transform:translateY(-6px)}
+100%{transform:translateY(0)}
+}
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25D366;
+color:white;
+padding:16px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 6px 20px rgba(0,0,0,.3)
+}
+
 </style>
 </head>
 
 <body>
 
 <header>
-<h1>JYA Reparación y Venta de Electrodomésticos</h1>
-<div>
-<a class="btn" href="https://wa.me/521557512142" target="_blank">Enviar WhatsApp</a>
+
+<div class="logo">
+<img src="logo.png" alt="JYA Reparación">
+<span>JYA Reparación</span>
 </div>
+
+<a class="btn" href="https://wa.me/5215575121423" target="_blank">WhatsApp</a>
+
 </header>
 
+<div style="background:#ffb300;color:#000;text-align:center;padding:10px;font-weight:bold">
+🔥 PROMOCIÓN: Consulta por nuestras tarjetas electrónicas y reparaciones — Atención rápida por WhatsApp
+</div>
+
 <section class="hero">
-<h2>Especialistas en Reparación de Electrónica y Electrodomésticos</h2>
-<p>Diagnóstico, reparación y venta de componentes electrónicos y electrodomésticos. Ahorra dinero reparando en lugar de comprar nuevo.</p>
-<a class="btn" href="https://wa.me/521557512142" target="_blank">Solicitar cotización por WhatsApp</a>
+
+<h1>Reparación Profesional de Electrónica</h1>
+
+<p>
+Especialistas en reparación de televisores, herramientas eléctricas y electrodomésticos.
+Ahorra dinero reparando en lugar de comprar equipos nuevos.
+</p>
+
+<a class="btn" href="https://wa.me/5215575121423" target="_blank">Solicitar cotización</a>
+
 </section>
 
 <div class="container">
 
-<h2>🛠 Nuestros Servicios</h2>
+<h2 class="section-title">Nuestros Servicios</h2>
 
 <div class="grid">
 
 <div class="card">
-<h3>📺 Reparación de Televisores y Equipos Electrónicos</h3>
+<h3>📺 Televisores</h3>
 <ul>
-<li>Televisores LED y Smart TV</li>
-<li>Pantallas de todas las marcas</li>
-<li>DVD y Blu‑ray</li>
+<li>Smart TV</li>
+<li>TV LED</li>
+<li>Diagnóstico de pantallas</li>
+<li>Tarjetas Main</li>
+<li>Fuentes de poder</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>🔊 Electrónica</h3>
+<ul>
 <li>Bocinas</li>
-<li>Equipos electrónicos en general</li>
+<li>DVD</li>
+<li>Blu‑ray</li>
+<li>Equipos electrónicos</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>🔧 Herramientas</h3>
+<ul>
+<li>Taladros</li>
+<li>Esmeriles</li>
+<li>Rotomartillos</li>
+<li>Pulidoras</li>
+<li>Cambio de carbones</li>
 </ul>
 </div>
 
 <div class="card">
 <h3>🏠 Electrodomésticos</h3>
 <ul>
+<li>Licuadoras (Oster, Taurus, Hamilton Beach)</li>
 <li>Microondas</li>
 <li>Aspiradoras</li>
-<li>Licuadoras (Oster, Ninja, Hamilton Beach, Taurus, Black+Decker)</li>
+<li>Batidoras</li>
 <li>Planchas</li>
 <li>Cafeteras</li>
-<li>Ventiladores</li>
 </ul>
 </div>
 
 <div class="card">
-<h3>🔧 Herramientas Eléctricas</h3>
+<h3>💳 Venta de Tarjetas</h3>
 <ul>
-<li>Taladros</li>
-<li>Esmeriles</li>
-<li>Rotomartillos</li>
-<li>Pulidoras</li>
-<li>Sierras eléctricas</li>
-<li>Cambio de carbones</li>
-</ul>
-</div>
-
-<div class="card">
-<h3>💳 Venta de Refacciones</h3>
-<ul>
-<li>Tarjetas Main para TV</li>
+<li>Tarjetas Main TV</li>
 <li>Tarjetas inversoras</li>
-<li>Placas base</li>
-<li>Componentes electrónicos</li>
-<li>Refacciones para herramientas</li>
+<li>Placas electrónicas</li>
+<li>Refacciones electrónicas</li>
 </ul>
 </div>
 
 </div>
 
-<h2 style="margin-top:40px">💡 ¿Por qué elegirnos?</h2>
-<ul>
-<li>✔ Diagnóstico profesional</li>
-<li>✔ Costos accesibles</li>
-<li>✔ Variedad de refacciones</li>
-<li>✔ Atención directa</li>
-<li>✔ Ahorra dinero reparando</li>
-</ul>
+</div>
 
-<h2 style="margin-top:40px">📍 Ubicación</h2>
-<p>Durango Manzana 030, San Juan, 54668 Coyotepec, Méx.</p>
-<p><strong>WhatsApp:</strong> 557512142<br>
-<strong>Llamadas:</strong> 5614585526</p>
+<div class="container">
+
+<h2 class="section-title">Tarjetas Electrónicas en Venta</h2>
+
+<div class="grid" style="margin-bottom:30px">
+<div class="card"><h3>Tarjetas Main</h3><p>Refacciones para televisores de distintas marcas.</p><a class="btn" href="https://wa.me/5215575121423" target="_blank">Consultar</a></div>
+<div class="card"><h3>Fuentes de Poder</h3><p>Módulos de energía para TVs LED y Smart TV.</p><a class="btn" href="https://wa.me/5215575121423" target="_blank">Consultar</a></div>
+<div class="card"><h3>Tarjetas T‑CON</h3><p>Componentes para control de pantalla.</p><a class="btn" href="https://wa.me/5215575121423" target="_blank">Consultar</a></div>
+<div class="card"><h3>Refacciones para Técnicos</h3><p>Modelos variados disponibles.</p><a class="btn" href="https://wa.me/5215575121423" target="_blank">Ver modelos</a></div>
+</div>
+
+<p style="text-align:center">Busca el modelo de tarjeta que necesitas:</p>
+
+<div style="max-width:500px;margin:20px auto">
+<input id="buscadorTarjetas" type="text" placeholder="Ejemplo: BN41, 6870C, APS..." style="width:100%;padding:12px;border-radius:8px;border:1px solid #ccc;font-size:16px">
+</div>
+
+<div class="card">
+<h3>Modelos Disponibles</h3>
+<p>Contamos con diferentes tarjetas y componentes para televisores y equipos electrónicos.</p>
+<ul id="listaTarjetas">
+<li>Tarjeta Main TV Element E4S25518</li>
+<li>CV950XH-C42</li>
+<li>TP.MS3393.PB818</li>
+<li>TP.MS3553PB819</li>
+<li>BN41-01785</li>
+<li>BN94-12812H</li>
+<li>BN94-09513A</li>
+<li>BN41-02663</li>
+<li>BN41-01938</li>
+<li>BN41-02378A</li>
+<li>BN41-01797</li>
+<li>CV3393BL-C</li>
+<li>CV3393BH-U32</li>
+<li>CV3553CH-C32</li>
+<li>PWB.MAIN.N7HK</li>
+<li>32E360MAIN</li>
+<li>PCBMAIN</li>
+<li>APS-282</li>
+<li>APS-283CH</li>
+<li>APS-243</li>
+<li>BN44-00468A</li>
+<li>BN44-00338B</li>
+<li>BN44-00442A</li>
+<li>DPS-250AP</li>
+<li>MIP550D-5TC-V</li>
+<li>6870C-081A</li>
+<li>6870C-0532C</li>
+<li>6870C-0481A</li>
+<li>6870C-0370A</li>
+<li>6870C-0743A</li>
+<li>T315XW02 V0</li>
+<li>T400XW01 V5</li>
+<li>LC320WXN</li>
+<li>HV430FHB-N4D</li>
+<li>LC420WUN-SCA1</li>
+<li>LTA320AP05</li>
+<li>BOE Tripod E361035</li>
+<li>CHASIS CN-0016</li>
+</ul>
+<p><strong>Pregunta por disponibilidad y compatibilidad.</strong></p>
+</div>
+
+<script>
+const buscador=document.getElementById('buscadorTarjetas');
+const lista=document.getElementById('listaTarjetas').getElementsByTagName('li');
+
+buscador.addEventListener('keyup',function(){
+let filtro=buscador.value.toLowerCase();
+for(let i=0;i<lista.length;i++){
+let txt=lista[i].textContent.toLowerCase();
+lista[i].style.display=txt.includes(filtro)?'list-item':'none';
+}
+});
+</script>
+
+<div style="text-align:center;margin-top:15px">
+<a class="btn" href="https://wa.me/5215575121423" target="_blank">Consultar tarjetas disponibles</a>
+</div>
 
 </div>
 
-<h2 style="margin-top:40px">⭐ Marcas que Reparamos</h2>
-<p>Trabajamos con múltiples marcas de electrodomésticos y equipos electrónicos como:</p>
-<p><strong>Samsung, LG, Sony, Philips, Panasonic, Hisense, Oster, Ninja, Hamilton Beach, Taurus, Black+Decker, Bosch, Makita, DeWalt, Milwaukee</strong> y muchas más.</p>
+<div class="container">
 
-<h2 style="margin-top:40px">📍 Cómo llegar</h2>
-<p>Durango Manzana 030, San Juan, 54668 Coyotepec, Méx.</p>
+<h2 class="section-title">Trabajos que realizamos</h2>
+
+<div class="gallery">
+
+<div>
+📺<br><br>
+Reparación de televisores
+</div>
+
+<div>
+🔧<br><br>
+Reparación de herramientas
+</div>
+
+<div>
+🔌<br><br>
+Diagnóstico electrónico
+</div>
+
+<div>
+💳<br><br>
+Venta de tarjetas electrónicas
+</div>
+
+</div>
+
+</div>
+
+<section class="highlight">
+
+<h2>¿Por qué elegir JYA Reparación?</h2>
 
 <p>
-<a class="btn" href="https://www.google.com/maps/search/?api=1&query=Durango+Manzana+030+San+Juan+Coyotepec+Mexico" target="_blank">Abrir ubicación en Google Maps</a>
+✔ Diagnóstico profesional<br>
+✔ Costos accesibles<br>
+✔ Experiencia en electrónica<br>
+✔ Refacciones disponibles<br>
+✔ Ahorra dinero reparando
 </p>
 
-<p><strong>WhatsApp:</strong> 557512142<br>
-<strong>Llamadas:</strong> 5614585526</p>
+</section>
+
+<div class="container">
+
+<h2 class="section-title">Opiniones de clientes</h2>
+
+<div style="text-align:center;margin-bottom:30px">
+<a class="btn" href="https://www.google.com/search?q=JYA+Reparacion+Coyotepec" target="_blank">⭐ Ver o dejar reseña en Google</a>
+</div>
+
+<div class="grid">
+
+<div class="review">
+⭐⭐⭐⭐⭐<br><br>
+"Repararon mi televisión muy rápido y a buen precio."
+</div>
+
+<div class="review">
+⭐⭐⭐⭐⭐<br><br>
+"Excelente servicio y muy buena atención."
+</div>
+
+<div class="review">
+⭐⭐⭐⭐⭐<br><br>
+"Me arreglaron un taladro que pensé que ya no servía."
+</div>
+
+</div>
+
+</div>
+
+<div class="container brands">
+
+<h2>Marcas que Reparamos</h2>
 
 <p>
+Samsung · LG · Sony · Philips · Panasonic · Hisense · Oster · Taurus · Black+Decker · Bosch · Makita · DeWalt
+</p>
+
+</div>
+
+<div class="container location">
+
+<h2>Ubicación</h2>
+
+<p>
+Durango Manzana 030, San Juan, 54668 Coyotepec, Estado de México
+</p>
+
+<p>
+<strong>WhatsApp:</strong> 5575121423<br>
+<strong>Llamadas:</strong> 5614585526
+</p>
+
+<br>
+
+<iframe
+src="https://www.google.com/maps?q=Durango%20Manzana%20030%20San%20Juan%20Coyotepec%20Mexico&output=embed"
+width="100%"
+height="300"
+style="border:0;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,.1)"
+loading="lazy">
+</iframe>
+
+<br><br>
+
+<a class="btn" href="https://www.google.com/maps/search/?api=1&query=Durango+Manzana+030+San+Juan+Coyotepec+Mexico" target="_blank">Abrir en Google Maps</a>
+
+<br><br>
+
 <a class="btn" href="tel:5614585526">Llamar ahora</a>
-</p>
+
+<br><br>
+
+<div style="background:#25D366;color:white;padding:20px;border-radius:12px;font-weight:bold">
+🔧 PROMOCIÓN: Diagnóstico rápido y reparación profesional para televisores, herramientas y electrodomésticos. ¡Ahorra dinero reparando en lugar de comprar nuevo!
+</div>
 
 </div>
 
 <footer>
-© 2026 JYA Reparación y Venta de Electrodomésticos | Reparación de electrodomésticos en Coyotepec
+
+© 2026 JYA Reparación y Venta de Electrodomésticos
+
 </footer>
 
-<a class="whatsapp" href="https://wa.me/521557512142" target="_blank">Enviar WhatsApp</a>
+<a class="callbtn" href="tel:5614585526">Llamar</a>
+<a class="whatsapp" href="https://wa.me/5215575121423" target="_blank">WhatsApp</a>
 
 </body>
 </html>

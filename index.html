@@ -1,145 +1,79 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>JYA Reparación y Venta de Electrodomésticos</title>
 
-<meta name="description" content="Reparación de televisores, herramientas eléctricas, electrodomésticos y juguetes eléctricos en Coyotepec Estado de México.">
-
-<link rel="icon" href="logo.png">
-
 <style>
 
-*{box-sizing:border-box}
-
 body{
-font-family:Arial;
 margin:0;
-background:#eef1f5;
-color:#1a1a1a
+font-family:Arial;
+background:#f4f4f4;
 }
 
 header{
-background:#111827;
-color:white;
-padding:15px 30px;
-display:flex;
-align-items:center;
-justify-content:space-between;
-position:sticky;
-top:0;
-z-index:1000
-}
-
-.logo{
-display:flex;
-align-items:center;
-gap:10px;
-font-weight:bold
-}
-
-.logo img{
-height:40px
-}
-
-.btn{
-background:#f59e0b;
-color:white;
-padding:10px 18px;
-border-radius:8px;
-text-decoration:none;
-font-weight:bold
-}
-
-.hero{
-background:linear-gradient(rgba(10,31,68,.85),rgba(10,31,68,.85)),url("https://images.unsplash.com/photo-1581092583537-20d51b4b4f1b");
+height:400px;
 background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
 color:white;
 text-align:center;
-padding:100px 20px
+font-size:40px;
+font-weight:bold;
+transition:background-image 1s;
 }
 
-.hero img{
-height:90px;
-margin-bottom:20px
-}
-
-.container{
-max-width:1150px;
-margin:auto;
-padding:50px 20px
-}
-
-.section-title{
+section{
+padding:40px;
 text-align:center;
-font-size:28px;
-margin-bottom:40px
 }
 
-.grid{
+.servicios{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:25px
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
 }
 
 .card{
 background:white;
-border-radius:12px;
-padding:20px;
-box-shadow:0 6px 18px rgba(0,0,0,.1)
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+overflow:hidden;
 }
 
 .card img{
 width:100%;
-height:170px;
+height:200px;
 object-fit:cover;
-border-radius:10px;
-margin-bottom:10px
 }
 
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px
-}
-
-.gallery img{
-width:100%;
-border-radius:10px
+.card h3{
+padding:10px;
 }
 
 footer{
-background:#111827;
+background:#222;
 color:white;
+padding:20px;
 text-align:center;
-padding:25px
 }
 
 .whatsapp{
 position:fixed;
-bottom:25px;
-right:25px;
+bottom:20px;
+right:20px;
 background:#25D366;
 color:white;
-padding:15px 18px;
+padding:15px 20px;
 border-radius:50px;
-font-weight:bold;
-text-decoration:none
-}
-
-.call{
-position:fixed;
-bottom:90px;
-right:25px;
-background:#22c55e;
-color:white;
-padding:15px 18px;
-border-radius:50px;
-font-weight:bold;
-text-decoration:none
+font-size:18px;
+text-decoration:none;
+box-shadow:0 5px 10px rgba(0,0,0,0.3);
 }
 
 </style>
@@ -147,96 +81,96 @@ text-decoration:none
 
 <body>
 
-<header>
-
-<div class="logo">
-<img src="logo.png">
-<span>JYA Reparación</span>
-</div>
-
-<a class="btn" href="https://wa.me/5215575121423">Cotizar reparación</a>
-
+<header id="portada">
+JYA Reparación y Venta de Electrodomésticos
 </header>
 
-<section class="hero">
+<section>
 
-<img src="logo.png">
+<h2>Servicios</h2>
 
-<h1>JYA Reparación y Venta de Electrodomésticos</h1>
+<div class="servicios">
 
-<p>
-Servicio profesional de reparación electrónica.  
-Reparamos televisores, herramientas eléctricas, electrodomésticos y juguetes eléctricos.
-</p>
+<div class="card">
+<img src="imagenes/licuadoras.jpg">
+<h3>Reparación de Electrodomésticos</h3>
+</div>
 
-<a class="btn" href="https://wa.me/5215575121423">Cotizar por WhatsApp</a>
+<div class="card">
+<img src="imagenes/bocinas.jpg">
+<h3>Electrónica y Bocinas</h3>
+</div>
+
+<div class="card">
+<img src="imagenes/herramientas.jpg">
+<h3>Herramientas Eléctricas</h3>
+</div>
+
+<div class="card">
+<img src="imagenes/carro-montable.jpg">
+<h3>Juguetes Eléctricos Montables</h3>
+</div>
+
+<div class="card">
+<img src="imagenes/tarjetas-main.jpg">
+<h3>Venta de Tarjetas Main para TV</h3>
+</div>
+
+</div>
 
 </section>
 
-<div class="container">
+<section>
 
-<h2 class="section-title">Nuestros Servicios</h2>
+<h2>Contacto</h2>
 
-<div class="grid">
+<p>📍 Durango Manzana 030 San Juan  
+Coyotepec Estado de México</p>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1593784991095-a205069470b6">
-<h3>📺 Televisores</h3>
-<ul>
-<li>Smart TV</li>
-<li>TV LED</li>
-<li>Diagnóstico de pantallas</li>
-<li>Tarjetas Main</li>
-<li>Fuentes de poder</li>
-</ul>
-</div>
+<p>📱 WhatsApp: 5575121423</p>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1545454675-3531b543be5d">
-<h3>🔊 Electrónica</h3>
-<ul>
-<li>Bocinas</li>
-<li>DVD</li>
-<li>Blu-ray</li>
-<li>Equipos de sonido</li>
-</ul>
-</div>
+<p>☎ Llamadas: 5614585526</p>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1581147036324-c1c3c7f7a6a3">
-<h3>🔧 Herramientas eléctricas</h3>
-<ul>
-<li>Taladros</li>
-<li>Rotomartillos</li>
-<li>Pulidoras</li>
-<li>Esmeriles</li>
-<li>Cambio de carbones</li>
-</ul>
-</div>
+</section>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1585515656943-8f7a3e4f9c0d">
-<h3>🏠 Electrodomésticos</h3>
-<ul>
-<li>Licuadoras</li>
-<li>Microondas</li>
-<li>Batidoras</li>
-<li>Aspiradoras</li>
-<li>Cafeteras</li>
-</ul>
-</div>
+<footer>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db">
-<h3>🚗 Juguetes eléctricos</h3>
-<ul>
-<li>Carros montables infantiles</li>
-<li>Motos eléctricas</li>
-<li>Carritos a batería</li>
-<li>Cambio de baterías</li>
-<li>Reparación de motores</li>
-</ul>
-</div>
+JYA Reparación y Venta de Electrodomésticos
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-158109258
+</footer>
+
+<a class="whatsapp" href="https://wa.me/525575121423" target="_blank">
+WhatsApp
+</a>
+
+<script>
+
+let imagenes = [
+"imagenes/portada1.jpg",
+"imagenes/portada2.jpg",
+"imagenes/portada3.jpg"
+]
+
+let i = 0
+
+function cambiarFondo(){
+
+document.getElementById("portada").style.backgroundImage =
+"url('" + imagenes[i] + "')"
+
+i++
+
+if(i >= imagenes.length){
+i = 0
+}
+
+}
+
+cambiarFondo()
+
+setInterval(cambiarFondo,3000)
+
+</script>
+
+</body>
+</html>

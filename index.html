@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>JYA Reparación y Venta de Electrodomésticos</title>
 
 <style>
@@ -11,164 +10,186 @@
 body{
 margin:0;
 font-family:Arial;
-background:#f4f4f4;
+background:#f5f5f5;
 }
 
 header{
-height:400px;
-background-size:cover;
-background-position:center;
-display:flex;
-align-items:center;
-justify-content:center;
+background:#0b5394;
 color:white;
 text-align:center;
-font-size:40px;
-font-weight:bold;
-transition:background-image 1s;
+padding:20px;
 }
 
-section{
-padding:40px;
-text-align:center;
+.portada{
+width:100%;
+height:300px;
+background-size:cover;
+background-position:center;
+transition:1s;
 }
 
-.servicios{
+.contenedor{
+max-width:1100px;
+margin:auto;
+padding:20px;
+}
+
+.grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
 gap:20px;
 }
 
 .card{
 background:white;
 border-radius:10px;
-box-shadow:0 4px 10px rgba(0,0,0,0.2);
 overflow:hidden;
+box-shadow:0 2px 8px rgba(0,0,0,0.2);
+text-align:center;
 }
 
 .card img{
 width:100%;
-height:200px;
+height:180px;
 object-fit:cover;
 }
 
 .card h3{
-padding:10px;
+margin:10px;
+}
+
+.botones{
+text-align:center;
+margin:30px;
+}
+
+.boton{
+display:inline-block;
+padding:15px 25px;
+margin:10px;
+background:#0b5394;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-size:18px;
+}
+
+.boton:hover{
+background:#073763;
+}
+
+.mapa{
+margin-top:30px;
 }
 
 footer{
-background:#222;
+background:#0b5394;
 color:white;
-padding:20px;
 text-align:center;
-}
-
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:15px 20px;
-border-radius:50px;
-font-size:18px;
-text-decoration:none;
-box-shadow:0 5px 10px rgba(0,0,0,0.3);
+padding:15px;
+margin-top:20px;
 }
 
 </style>
+
 </head>
 
 <body>
 
-<header id="portada">
-JYA Reparación y Venta de Electrodomésticos
+<header>
+<h1>JYA Reparación y Venta de Electrodomésticos</h1>
+<p>Durango Manzana 030 San Juan 54668 Coyotepec</p>
 </header>
 
-<section>
+<div class="portada" id="portada"></div>
 
-<h2>Servicios</h2>
+<div class="contenedor">
 
-<div class="servicios">
+<h2>Servicios y Productos</h2>
+
+<div class="grid">
 
 <div class="card">
-<img src="imagenes/licuadoras.jpg">
-<h3>Reparación de Electrodomésticos</h3>
+<img src="https://images.unsplash.com/photo-1586201375761-83865001e31c">
+<h3>Licuadoras y Electrodomésticos</h3>
 </div>
 
 <div class="card">
-<img src="imagenes/bocinas.jpg">
+<img src="https://images.unsplash.com/photo-1518441902117-bf03c3c1a6b5">
 <h3>Electrónica y Bocinas</h3>
 </div>
 
 <div class="card">
-<img src="imagenes/herramientas.jpg">
+<img src="https://images.unsplash.com/photo-1504148455328-c376907d081c">
 <h3>Herramientas Eléctricas</h3>
 </div>
 
 <div class="card">
-<img src="imagenes/carro-montable.jpg">
+<img src="https://images.unsplash.com/photo-1596461404969-9ae70f2830c1">
 <h3>Juguetes Eléctricos Montables</h3>
 </div>
 
 <div class="card">
-<img src="imagenes/tarjetas-main.jpg">
-<h3>Venta de Tarjetas Main para TV</h3>
+<img src="https://images.unsplash.com/photo-1550009158-9ebf69173e03">
+<h3>Venta de Tarjetas Main y Electrónica</h3>
 </div>
 
 </div>
 
-</section>
+<div class="botones">
 
-<section>
+<a class="boton" href="tel:5614585526">📞 Llamar</a>
 
-<h2>Contacto</h2>
+<a class="boton" href="mailto:jyareparacion@gmail.com">💲 Cotizar</a>
 
-<p>📍 Durango Manzana 030 San Juan  
-Coyotepec Estado de México</p>
+</div>
 
-<p>📱 WhatsApp: 5575121423</p>
+<div class="mapa">
 
-<p>☎ Llamadas: 5614585526</p>
+<iframe
+src="https://www.google.com/maps?q=Durango%20Manzana%20030%20San%20Juan%20Coyotepec&output=embed"
+width="100%"
+height="300"
+style="border:0;"
+allowfullscreen=""
+loading="lazy">
+</iframe>
 
-</section>
+</div>
+
+</div>
 
 <footer>
 
-JYA Reparación y Venta de Electrodomésticos
+<p>Teléfono: 5614585526 / 5575121423</p>
 
 </footer>
-
-<a class="whatsapp" href="https://wa.me/525575121423" target="_blank">
-WhatsApp
-</a>
 
 <script>
 
 let imagenes = [
-"imagenes/portada1.jpg",
-"imagenes/portada2.jpg",
-"imagenes/portada3.jpg"
-]
+"https://images.unsplash.com/photo-1581578731548-c64695cc6952",
+"https://images.unsplash.com/photo-1519710164239-da123dc03ef4",
+"https://images.unsplash.com/photo-1581092160607-ee22621dd758"
+];
 
-let i = 0
+let i=0;
 
-function cambiarFondo(){
+function cambiarPortada(){
 
-document.getElementById("portada").style.backgroundImage =
-"url('" + imagenes[i] + "')"
+document.getElementById("portada").style.backgroundImage="url("+imagenes[i]+")";
 
-i++
+i++;
 
-if(i >= imagenes.length){
-i = 0
+if(i>=imagenes.length){
+i=0;
 }
 
 }
 
-cambiarFondo()
+setInterval(cambiarPortada,3000);
 
-setInterval(cambiarFondo,3000)
+cambiarPortada();
 
 </script>
 

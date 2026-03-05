@@ -2,78 +2,64 @@
 <html lang="es">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>JYA Reparación y Venta de Electrodomésticos</title>
 
-<link rel="icon" href="logo.png">
+<meta name="description" content="Reparación de televisores, herramientas eléctricas, electrodomésticos y juguetes eléctricos en Coyotepec Estado de México.">
 
-<meta name="description" content="Reparación de televisores, herramientas eléctricas y electrodomésticos en Coyotepec Estado de México. Servicio profesional JYA Reparación.">
+<link rel="icon" href="logo.png">
 
 <style>
 
 *{box-sizing:border-box}
 
 body{
-font-family:Arial,Helvetica,sans-serif;
+font-family:Arial;
 margin:0;
-background:#f3f4f6;
-color:#111;
+background:#eef1f5;
+color:#1a1a1a
 }
 
-/* HEADER */
-
 header{
-background:#0a1f44;
+background:#111827;
 color:white;
-padding:15px 25px;
+padding:15px 30px;
 display:flex;
 align-items:center;
 justify-content:space-between;
 position:sticky;
 top:0;
-z-index:1000;
-box-shadow:0 4px 10px rgba(0,0,0,.3)
+z-index:1000
 }
 
 .logo{
 display:flex;
 align-items:center;
 gap:10px;
-font-weight:bold;
-font-size:18px
+font-weight:bold
 }
 
 .logo img{
-height:45px
+height:40px
 }
 
 .btn{
 background:#f59e0b;
 color:white;
 padding:10px 18px;
-border-radius:10px;
+border-radius:8px;
 text-decoration:none;
-font-weight:bold;
-transition:.3s
+font-weight:bold
 }
-
-.btn:hover{
-background:#d97706
-}
-
-/* HERO */
 
 .hero{
-background:linear-gradient(rgba(10,31,68,.85),rgba(10,31,68,.85)),
-url("https://images.unsplash.com/photo-1581092335397-9583eb92d232");
+background:linear-gradient(rgba(10,31,68,.85),rgba(10,31,68,.85)),url("https://images.unsplash.com/photo-1581092583537-20d51b4b4f1b");
 background-size:cover;
-background-position:center;
 color:white;
 text-align:center;
-padding:110px 20px
+padding:100px 20px
 }
 
 .hero img{
@@ -81,31 +67,16 @@ height:90px;
 margin-bottom:20px
 }
 
-.hero h1{
-font-size:40px;
-margin-bottom:10px
-}
-
-.hero p{
-font-size:18px;
-max-width:650px;
-margin:auto;
-margin-bottom:20px
-}
-
-/* SECCIONES */
-
 .container{
 max-width:1150px;
 margin:auto;
-padding:60px 20px
+padding:50px 20px
 }
 
 .section-title{
 text-align:center;
 font-size:28px;
-margin-bottom:40px;
-color:#0a1f44
+margin-bottom:40px
 }
 
 .grid{
@@ -114,18 +85,11 @@ grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:25px
 }
 
-/* TARJETAS */
-
 .card{
 background:white;
-border-radius:15px;
+border-radius:12px;
 padding:20px;
-box-shadow:0 10px 25px rgba(0,0,0,.1);
-transition:.3s
-}
-
-.card:hover{
-transform:translateY(-6px)
+box-shadow:0 6px 18px rgba(0,0,0,.1)
 }
 
 .card img{
@@ -133,82 +97,52 @@ width:100%;
 height:170px;
 object-fit:cover;
 border-radius:10px;
-margin-bottom:12px
+margin-bottom:10px
 }
-
-/* PROMO */
-
-.promo{
-background:#f59e0b;
-color:white;
-text-align:center;
-padding:12px;
-font-weight:bold
-}
-
-/* GALERIA */
 
 .gallery{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 gap:20px
 }
 
-.gallery div{
-background:white;
-padding:40px;
-border-radius:12px;
-text-align:center;
-box-shadow:0 5px 15px rgba(0,0,0,.1)
+.gallery img{
+width:100%;
+border-radius:10px
 }
-
-/* MARCAS */
-
-.brands{
-text-align:center;
-line-height:1.8;
-font-size:17px
-}
-
-/* FOOTER */
 
 footer{
-background:#0a1f44;
+background:#111827;
 color:white;
 text-align:center;
 padding:25px
 }
 
-/* BOTONES FLOTANTES */
-
 .whatsapp{
-position:fixed;
-bottom:90px;
-right:25px;
-background:#25D366;
-color:white;
-padding:15px 20px;
-border-radius:50px;
-text-decoration:none;
-font-weight:bold;
-box-shadow:0 6px 18px rgba(0,0,0,.3)
-}
-
-.callbtn{
 position:fixed;
 bottom:25px;
 right:25px;
+background:#25D366;
+color:white;
+padding:15px 18px;
+border-radius:50px;
+font-weight:bold;
+text-decoration:none
+}
+
+.call{
+position:fixed;
+bottom:90px;
+right:25px;
 background:#22c55e;
 color:white;
-padding:15px 20px;
+padding:15px 18px;
 border-radius:50px;
-text-decoration:none;
 font-weight:bold;
-box-shadow:0 6px 18px rgba(0,0,0,.3)
+text-decoration:none
 }
 
 </style>
-
 </head>
 
 <body>
@@ -220,13 +154,9 @@ box-shadow:0 6px 18px rgba(0,0,0,.3)
 <span>JYA Reparación</span>
 </div>
 
-<a class="btn" href="https://wa.me/5215575121423?text=Hola quiero cotizar una reparación">Cotizar</a>
+<a class="btn" href="https://wa.me/5215575121423">Cotizar reparación</a>
 
 </header>
-
-<div class="promo">
-🔧 Reparación de televisores, herramientas y electrodomésticos
-</div>
 
 <section class="hero">
 
@@ -235,11 +165,11 @@ box-shadow:0 6px 18px rgba(0,0,0,.3)
 <h1>JYA Reparación y Venta de Electrodomésticos</h1>
 
 <p>
+Servicio profesional de reparación electrónica.  
 Reparamos televisores, herramientas eléctricas, electrodomésticos y juguetes eléctricos.
-Ahorra dinero reparando en lugar de comprar equipos nuevos.
 </p>
 
-<a class="btn" href="https://wa.me/5215575121423">Cotizar ahora</a>
+<a class="btn" href="https://wa.me/5215575121423">Cotizar por WhatsApp</a>
 
 </section>
 
@@ -255,7 +185,7 @@ Ahorra dinero reparando en lugar de comprar equipos nuevos.
 <ul>
 <li>Smart TV</li>
 <li>TV LED</li>
-<li>Diagnóstico</li>
+<li>Diagnóstico de pantallas</li>
 <li>Tarjetas Main</li>
 <li>Fuentes de poder</li>
 </ul>
@@ -268,18 +198,18 @@ Ahorra dinero reparando en lugar de comprar equipos nuevos.
 <li>Bocinas</li>
 <li>DVD</li>
 <li>Blu-ray</li>
-<li>Equipos electrónicos</li>
+<li>Equipos de sonido</li>
 </ul>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1504148455328-c376907d081c">
-<h3>🔧 Herramientas</h3>
+<img src="https://images.unsplash.com/photo-1581147036324-c1c3c7f7a6a3">
+<h3>🔧 Herramientas eléctricas</h3>
 <ul>
 <li>Taladros</li>
-<li>Esmeriles</li>
 <li>Rotomartillos</li>
 <li>Pulidoras</li>
+<li>Esmeriles</li>
 <li>Cambio de carbones</li>
 </ul>
 </div>
@@ -290,83 +220,23 @@ Ahorra dinero reparando en lugar de comprar equipos nuevos.
 <ul>
 <li>Licuadoras</li>
 <li>Microondas</li>
-<li>Aspiradoras</li>
 <li>Batidoras</li>
-<li>Planchas</li>
+<li>Aspiradoras</li>
 <li>Cafeteras</li>
 </ul>
 </div>
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db">
-<h3>🚗 Juguetes Eléctricos</h3>
+<h3>🚗 Juguetes eléctricos</h3>
 <ul>
-<li>Carros eléctricos</li>
+<li>Carros montables infantiles</li>
 <li>Motos eléctricas</li>
-<li>Juguetes montables</li>
+<li>Carritos a batería</li>
 <li>Cambio de baterías</li>
+<li>Reparación de motores</li>
 </ul>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0">
-<h3>💳 Venta de Tarjetas</h3>
-<ul>
-<li>Tarjetas Main TV</li>
-<li>Placas electrónicas</li>
-<li>Refacciones</li>
-</ul>
-</div>
-
-</div>
-
-</div>
-
-<div class="container">
-
-<h2 class="section-title">Ubicación</h2>
-
-<p style="text-align:center">
-Durango Manzana 030<br>
-San Juan<br>
-54668 Coyotepec<br>
-Estado de México
-</p>
-
-<p style="text-align:center">
-
-<strong>WhatsApp:</strong> 5575121423<br>
-<strong>Llamadas:</strong> 5614585526
-
-</p>
-
-</div>
-
-<div class="container">
-
-<h2 class="section-title">Marcas que reparamos</h2>
-
-<div class="brands">
-
-Samsung • LG • Sony • Hisense • TCL • Philips • Panasonic • RCA • AOC<br><br>
-
-Oster • Taurus • Hamilton Beach • Black+Decker • Koblenz • Mabe<br><br>
-
-Makita • Bosch • DeWalt • Truper
-
-</div>
-
-</div>
-
-<footer>
-
-© 2026 JYA Reparación y Venta de Electrodomésticos
-
-</footer>
-
-<a class="whatsapp" href="https://wa.me/5215575121423">WhatsApp</a>
-
-<a class="callbtn" href="tel:5614585526">Llamar</a>
-
-</body>
-</html>
+<img src="https://images.unsplash.com/photo-158109258

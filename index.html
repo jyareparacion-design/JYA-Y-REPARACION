@@ -4,13 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>JYA Reparación y Venta de Electrodomésticos</title>
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="apple-touch-icon" href="logo.png">
 
 <style>
 *{box-sizing:border-box}
-body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#f4f6f8;color:#222}
+body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#f1f4f8;color:#222}
 
+/* HEADER */
 header{
-background:#0b0b0b;
+background:#0a1f44;
 color:white;
 padding:15px 25px;
 display:flex;
@@ -19,7 +22,7 @@ justify-content:space-between;
 position:sticky;
 top:0;
 z-index:1000;
-box-shadow:0 2px 10px rgba(0,0,0,0.3)
+box-shadow:0 4px 15px rgba(0,0,0,0.25)
 }
 
 .logo{
@@ -32,65 +35,77 @@ font-size:18px
 
 .logo img{height:40px}
 
+/* BOTONES */
 .btn{
-background:#25D366;
+background:#ff7a00;
 color:white;
-padding:10px 18px;
-border-radius:8px;
+padding:11px 20px;
+border-radius:10px;
 text-decoration:none;
 font-weight:bold;
-transition:.2s
+transition:.25s;
+box-shadow:0 4px 10px rgba(0,0,0,.2)
 }
 
-.btn:hover{transform:scale(1.05)}
+.btn:hover{
+background:#e86900;
+transform:translateY(-2px)
+}
 
+/* HERO */
 .hero{
-background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url("https://images.unsplash.com/photo-1581092918056-0c4c3acd3789");
+background:linear-gradient(rgba(10,31,68,.85),rgba(10,31,68,.85)),url("https://images.unsplash.com/photo-1581092918056-0c4c3acd3789");
 background-size:cover;
 background-position:center;
 color:white;
 text-align:center;
-padding:110px 20px
+padding:120px 20px
 }
 
-.hero h1{font-size:42px;margin-bottom:20px}
+.hero h1{font-size:44px;margin-bottom:15px}
 .hero p{font-size:18px;max-width:700px;margin:auto;margin-bottom:25px}
 
-.container{max-width:1150px;margin:auto;padding:50px 20px}
+.container{max-width:1150px;margin:auto;padding:55px 20px}
 
-.section-title{text-align:center;margin-bottom:35px}
+.section-title{text-align:center;margin-bottom:40px;font-size:28px;color:#0a1f44}
 
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px}
+/* GRID */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px}
 
+/* TARJETAS MAS MARCADAS */
 .card{
 background:white;
 padding:25px;
-border-radius:12px;
-box-shadow:0 6px 18px rgba(0,0,0,.08);
-transition:.25s
+border-radius:14px;
+border:1px solid #e4e7ec;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s
 }
 
-.card:hover{transform:translateY(-6px);box-shadow:0 10px 25px rgba(0,0,0,.15)}
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 15px 35px rgba(0,0,0,.15)
+}
 
 .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
 
 .gallery div{
 background:white;
 padding:40px 20px;
-border-radius:12px;
+border-radius:14px;
 text-align:center;
-box-shadow:0 4px 12px rgba(0,0,0,.08)
+box-shadow:0 6px 18px rgba(0,0,0,.1)
 }
 
 .review{
 background:white;
 padding:20px;
-border-radius:10px;
-box-shadow:0 4px 12px rgba(0,0,0,.08)
+border-radius:12px;
+box-shadow:0 6px 18px rgba(0,0,0,.1)
 }
 
 .highlight{
-background:#111;
+background:#0a1f44;
 color:white;
 padding:60px 20px;
 text-align:center
@@ -101,20 +116,21 @@ text-align:center
 .location{text-align:center}
 
 footer{
-background:#0b0b0b;
+background:#0a1f44;
 color:white;
 text-align:center;
 padding:25px;
 margin-top:40px
 }
 
-.whatsapp{
+/* BOTON FLOTANTE SOLO LLAMADAS */
+.callbtn{
 position:fixed;
 bottom:25px;
 right:25px;
-background:#25D366;
+background:#ff7a00;
 color:white;
-padding:16px 20px;
+padding:16px 22px;
 border-radius:50px;
 text-decoration:none;
 font-weight:bold;
@@ -122,34 +138,18 @@ box-shadow:0 6px 20px rgba(0,0,0,.3);
 animation:float 2s ease-in-out infinite
 }
 
-.callbtn{
-position:fixed;
-bottom:90px;
-right:25px;
-background:#0b0b0b;
-color:white;
-padding:16px 20px;
-border-radius:50px;
-text-decoration:none;
-font-weight:bold;
-box-shadow:0 6px 20px rgba(0,0,0,.3)
-}
-
 @keyframes float{
 0%{transform:translateY(0)}
 50%{transform:translateY(-6px)}
 100%{transform:translateY(0)}
 }
-position:fixed;
-bottom:25px;
-right:25px;
-background:#25D366;
+
+.promo{
+background:#ff7a00;
 color:white;
-padding:16px 20px;
-border-radius:50px;
-text-decoration:none;
-font-weight:bold;
-box-shadow:0 6px 20px rgba(0,0,0,.3)
+text-align:center;
+padding:12px;
+font-weight:bold
 }
 
 </style>
@@ -164,12 +164,12 @@ box-shadow:0 6px 20px rgba(0,0,0,.3)
 <span>JYA Reparación</span>
 </div>
 
-<a class="btn" href="https://wa.me/5215575121423" target="_blank">WhatsApp</a>
+<a class="btn" href="https://wa.me/5215575121423?text=Hola%2C+quiero+cotizar+una+reparacion" target="_blank">Cotizar reparación</a>
 
 </header>
 
-<div style="background:#ffb300;color:#000;text-align:center;padding:10px;font-weight:bold">
-🔥 PROMOCIÓN: Consulta por nuestras tarjetas electrónicas y reparaciones — Atención rápida por WhatsApp
+<div class="promo">
+🔧 Reparación de televisores, herramientas y electrodomésticos • Consulta disponibilidad de tarjetas electrónicas
 </div>
 
 <section class="hero">
@@ -181,7 +181,7 @@ Especialistas en reparación de televisores, herramientas eléctricas y electrod
 Ahorra dinero reparando en lugar de comprar equipos nuevos.
 </p>
 
-<a class="btn" href="https://wa.me/5215575121423" target="_blank">Solicitar cotización</a>
+<a class="btn" href="https://wa.me/5215575121423?text=Hola%2C+quiero+cotizar+una+reparacion" target="_blank">Cotizar ahora</a>
 
 </section>
 
@@ -253,13 +253,6 @@ Ahorra dinero reparando en lugar de comprar equipos nuevos.
 
 <h2 class="section-title">Tarjetas Electrónicas en Venta</h2>
 
-<div class="grid" style="margin-bottom:30px">
-<div class="card"><h3>Tarjetas Main</h3><p>Refacciones para televisores de distintas marcas.</p><a class="btn" href="https://wa.me/5215575121423" target="_blank">Consultar</a></div>
-<div class="card"><h3>Fuentes de Poder</h3><p>Módulos de energía para TVs LED y Smart TV.</p><a class="btn" href="https://wa.me/5215575121423" target="_blank">Consultar</a></div>
-<div class="card"><h3>Tarjetas T‑CON</h3><p>Componentes para control de pantalla.</p><a class="btn" href="https://wa.me/5215575121423" target="_blank">Consultar</a></div>
-<div class="card"><h3>Refacciones para Técnicos</h3><p>Modelos variados disponibles.</p><a class="btn" href="https://wa.me/5215575121423" target="_blank">Ver modelos</a></div>
-</div>
-
 <p style="text-align:center">Busca el modelo de tarjeta que necesitas:</p>
 
 <div style="max-width:500px;margin:20px auto">
@@ -268,7 +261,6 @@ Ahorra dinero reparando en lugar de comprar equipos nuevos.
 
 <div class="card">
 <h3>Modelos Disponibles</h3>
-<p>Contamos con diferentes tarjetas y componentes para televisores y equipos electrónicos.</p>
 <ul id="listaTarjetas">
 <li>Tarjeta Main TV Element E4S25518</li>
 <li>CV950XH-C42</li>
@@ -309,7 +301,6 @@ Ahorra dinero reparando en lugar de comprar equipos nuevos.
 <li>BOE Tripod E361035</li>
 <li>CHASIS CN-0016</li>
 </ul>
-<p><strong>Pregunta por disponibilidad y compatibilidad.</strong></p>
 </div>
 
 <script>
@@ -325,131 +316,26 @@ lista[i].style.display=txt.includes(filtro)?'list-item':'none';
 });
 </script>
 
-<div style="text-align:center;margin-top:15px">
-<a class="btn" href="https://wa.me/5215575121423" target="_blank">Consultar tarjetas disponibles</a>
+<div style="text-align:center;margin-top:20px">
+<a class="btn" href="https://wa.me/5215575121423?text=Hola%2C+quiero+consultar+por+una+tarjeta+electronica" target="_blank">Consultar tarjeta</a>
 </div>
 
 </div>
 
 <div class="container">
 
-<h2 class="section-title">Trabajos que realizamos</h2>
-
-<div class="gallery">
-
-<div>
-📺<br><br>
-Reparación de televisores
-</div>
-
-<div>
-🔧<br><br>
-Reparación de herramientas
-</div>
-
-<div>
-🔌<br><br>
-Diagnóstico electrónico
-</div>
-
-<div>
-💳<br><br>
-Venta de tarjetas electrónicas
-</div>
-
-</div>
-
-</div>
-
-<section class="highlight">
-
-<h2>¿Por qué elegir JYA Reparación?</h2>
+<h2 class="section-title">Ubicación</h2>
 
 <p>
-✔ Diagnóstico profesional<br>
-✔ Costos accesibles<br>
-✔ Experiencia en electrónica<br>
-✔ Refacciones disponibles<br>
-✔ Ahorra dinero reparando
+Puedes encontrarnos en la siguiente ubicación o abrir la dirección directamente en Google Maps.
 </p>
 
-</section>
+<a class="btn" href="https://maps.app.goo.gl/NenggenxnHjKSjcr8" target="_blank">Abrir ubicación en Google Maps</a>
 
-<div class="container">
-
-<h2 class="section-title">Opiniones de clientes</h2>
-
-<div style="text-align:center;margin-bottom:30px">
-<a class="btn" href="https://www.google.com/search?q=JYA+Reparacion+Coyotepec" target="_blank">⭐ Ver o dejar reseña en Google</a>
-</div>
-
-<div class="grid">
-
-<div class="review">
-⭐⭐⭐⭐⭐<br><br>
-"Repararon mi televisión muy rápido y a buen precio."
-</div>
-
-<div class="review">
-⭐⭐⭐⭐⭐<br><br>
-"Excelente servicio y muy buena atención."
-</div>
-
-<div class="review">
-⭐⭐⭐⭐⭐<br><br>
-"Me arreglaron un taladro que pensé que ya no servía."
-</div>
-
-</div>
-
-</div>
-
-<div class="container brands">
-
-<h2>Marcas que Reparamos</h2>
-
-<p>
-Samsung · LG · Sony · Philips · Panasonic · Hisense · Oster · Taurus · Black+Decker · Bosch · Makita · DeWalt
-</p>
-
-</div>
-
-<div class="container location">
-
-<h2>Ubicación</h2>
-
-<p>
-Durango Manzana 030, San Juan, 54668 Coyotepec, Estado de México
-</p>
-
-<p>
+<p style="margin-top:20px">
 <strong>WhatsApp:</strong> 5575121423<br>
 <strong>Llamadas:</strong> 5614585526
 </p>
-
-<br>
-
-<iframe
-src="https://www.google.com/maps?q=Durango%20Manzana%20030%20San%20Juan%20Coyotepec%20Mexico&output=embed"
-width="100%"
-height="300"
-style="border:0;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,.1)"
-loading="lazy">
-</iframe>
-
-<br><br>
-
-<a class="btn" href="https://www.google.com/maps/search/?api=1&query=Durango+Manzana+030+San+Juan+Coyotepec+Mexico" target="_blank">Abrir en Google Maps</a>
-
-<br><br>
-
-<a class="btn" href="tel:5614585526">Llamar ahora</a>
-
-<br><br>
-
-<div style="background:#25D366;color:white;padding:20px;border-radius:12px;font-weight:bold">
-🔧 PROMOCIÓN: Diagnóstico rápido y reparación profesional para televisores, herramientas y electrodomésticos. ¡Ahorra dinero reparando en lugar de comprar nuevo!
-</div>
 
 </div>
 
@@ -460,7 +346,6 @@ loading="lazy">
 </footer>
 
 <a class="callbtn" href="tel:5614585526">Llamar</a>
-<a class="whatsapp" href="https://wa.me/5215575121423" target="_blank">WhatsApp</a>
 
 </body>
 </html>

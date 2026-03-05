@@ -1,4 +1,348 @@
 <!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JYA Reparación y Venta de Electrodomésticos</title>
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="apple-touch-icon" href="logo.png">
+
+<style>
+*{box-sizing:border-box}
+body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#eef1f5;color:#1a1a1a}
+
+/* HEADER */
+header{
+background:#1f2937;
+color:white;
+padding:15px 25px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+position:sticky;
+top:0;
+z-index:1000;
+box-shadow:0 4px 15px rgba(0,0,0,0.25)
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+font-weight:bold;
+font-size:18px
+}
+
+.logo img{height:40px}
+
+/* BOTONES */
+.btn{
+background:#f59e0b;
+color:white;
+padding:11px 20px;
+border-radius:10px;
+text-decoration:none;
+font-weight:bold;
+transition:.25s;
+box-shadow:0 6px 14px rgba(0,0,0,.25)
+}
+
+.btn:hover{
+background:#d97706;
+transform:translateY(-2px)
+}
+
+/* HERO */
+.hero{
+background:linear-gradient(rgba(10,31,68,.85),rgba(10,31,68,.85)),url("https://images.unsplash.com/photo-1581092918056-0c4c3acd3789");
+background-size:cover;
+background-position:center;
+color:white;
+text-align:center;
+padding:120px 20px
+}
+
+.hero h1{font-size:44px;margin-bottom:15px}
+.hero p{font-size:18px;max-width:700px;margin:auto;margin-bottom:25px}
+
+.container{max-width:1150px;margin:auto;padding:55px 20px}
+
+.section-title{text-align:center;margin-bottom:40px;font-size:28px;color:#0a1f44}
+
+/* GRID */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px}
+
+/* TARJETAS MAS MARCADAS */
+.card{
+background:white;
+padding:25px;
+border-radius:14px;
+border:1px solid #e4e7ec;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s
+}
+
+.card img{
+width:100%;
+height:160px;
+object-fit:cover;
+border-radius:10px;
+margin-bottom:12px
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:14px;
+border:1px solid #e4e7ec;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s
+}
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 15px 35px rgba(0,0,0,.15)
+}
+
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+
+.gallery div{
+background:white;
+padding:40px 20px;
+border-radius:14px;
+text-align:center;
+box-shadow:0 6px 18px rgba(0,0,0,.1)
+}
+
+.review{
+background:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 6px 18px rgba(0,0,0,.1)
+}
+
+.highlight{
+background:#1f2937;
+color:white;
+padding:60px 20px;
+text-align:center
+}
+
+.brands{text-align:center;font-size:17px;line-height:1.7}
+
+.location{text-align:center}
+
+footer{
+background:#1f2937;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:40px
+}
+
+/* BOTON FLOTANTE SOLO LLAMADAS */
+.callbtn{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#22c55e;
+color:white;
+padding:16px 22px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 8px 25px rgba(0,0,0,.35);
+animation:float 2s ease-in-out infinite
+}
+
+@keyframes float{
+0%{transform:translateY(0)}
+50%{transform:translateY(-6px)}
+100%{transform:translateY(0)}
+}
+
+.promo{
+background:#f59e0b;
+color:white;
+text-align:center;
+padding:12px;
+font-weight:bold
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<img src="logo.png" alt="JYA Reparación">
+<span>JYA Reparación y Venta de Electrodomésticos</span>
+</div>
+
+<a class="btn" href="https://wa.me/5215575121423?text=Hola%2C+quiero+cotizar+una+reparacion" target="_blank">Cotizar reparación</a>
+
+</header>
+
+<div class="promo">
+🔧 Reparación de televisores, herramientas y electrodomésticos • Consulta disponibilidad de tarjetas electrónicas
+</div>
+
+<section class="hero">
+
+<img src="logo.png" alt="JYA Reparación" style="height:90px;margin-bottom:20px">
+
+<h1>JYA Reparación y Venta de Electrodomésticos</h1>
+
+<p>
+Servicio profesional de reparación electrónica. Reparamos televisores, herramientas, electrodomésticos y juguetes eléctricos.
+Ahorra dinero reparando en lugar de comprar equipos nuevos.
+</p>
+
+<a class="btn" href="https://wa.me/5215575121423?text=Hola%2C+quiero+cotizar+una+reparacion" target="_blank">Cotizar ahora</a>
+
+</section>
+
+<div class="container">
+
+<h2 class="section-title">Nuestros Servicios</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1" alt="Reparación de televisores">
+<h3>📺 Televisores</h3>
+<ul>
+<li>Smart TV</li>
+<li>TV LED</li>
+<li>Diagnóstico de pantallas</li>
+<li>Tarjetas Main</li>
+<li>Fuentes de poder</li>
+</ul>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1518444065439-e933c06ce9cd" alt="Equipos electrónicos">
+<h3>🔊 Electrónica</h3>
+<ul>
+<li>Bocinas</li>
+<li>DVD</li>
+<li>Blu‑ray</li>
+<li>Equipos electrónicos</li>
+</ul>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1581147036324-c1c3c7f7a6a3" alt="Herramientas eléctricas">
+<h3>🔧 Herramientas</h3>
+<ul>
+<li>Taladros</li>
+<li>Esmeriles</li>
+<li>Rotomartillos</li>
+<li>Pulidoras</li>
+<li>Cambio de carbones</li>
+</ul>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1586201375761-83865001e31c" alt="Electrodomésticos">
+<h3>🏠 Electrodomésticos</h3>
+<ul>
+<li>Licuadoras (Oster, Taurus, Hamilton Beach)</li>
+<li>Microondas</li>
+<li>Aspiradoras</li>
+<li>Batidoras</li>
+<li>Planchas</li>
+<li>Cafeteras</li>
+<li>Tostadores</li>
+<li>Freidoras eléctricas</li>
+<li>Extractores de jugo</li>
+</ul>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1596464716127-f2a82984de30" alt="Juguetes eléctricos montables">
+<h3>🚗 Juguetes Eléctricos</h3>
+<ul>
+<li>Carros eléctricos para niños</li>
+<li>Motos eléctricas infantiles</li>
+<li>Juguetes montables</li>
+<li>Carritos a batería</li>
+<li>Cuatrimotos infantiles</li>
+<li>Reparación de motores</li>
+<li>Cambio de baterías</li>
+<li>Reparación de tarjetas electrónicas</li>
+<li>Problemas de carga o encendido</li>
+</ul>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7" alt="Tarjetas electrónicas">
+<h3>💳 Venta de Tarjetas</h3>
+<ul>
+<li>Tarjetas Main TV</li>
+<li>Tarjetas inversoras</li>
+<li>Placas electrónicas</li>
+<li>Refacciones electrónicas</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<div class="container">
+
+<h2 class="section-title">Tarjetas Electrónicas en Venta</h2>
+
+<p style="text-align:center">Busca el modelo de tarjeta que necesitas:</p>
+
+<div style="max-width:500px;margin:20px auto">
+<input id="buscadorTarjetas" type="text" placeholder="Ejemplo: BN41, 6870C, APS..." style="width:100%;padding:12px;border-radius:8px;border:1px solid #ccc;font-size:16px">
+</div>
+
+<div class="card">
+<h3>Modelos Disponibles</h3>
+<ul id="listaTarjetas">
+<li>Tarjeta Main TV Element E4S25518</li>
+<li>CV950XH-C42</li>
+<li>TP.MS3393.PB818</li>
+<li>TP.MS3553PB819</li>
+<li>BN41-01785</li>
+<li>BN94-12812H</li>
+<li>BN94-09513A</li>
+<li>BN41-02663</li>
+<li>BN41-01938</li>
+<li>BN41-02378A</li>
+<li>BN41-01797</li>
+<li>CV3393BL-C</li>
+<li>CV3393BH-U32</li>
+<li>CV3553CH-C32</li>
+<li>PWB.MAIN.N7HK</li>
+<li>32E360MAIN</li>
+<li>PCBMAIN</li>
+<li>APS-282</li>
+<li>APS-283CH</li>
+<li>APS-243</li>
+<li>BN44-00468A</li>
+<li>BN44-00338B</li>
+<li>BN44-00442A</li>
+<li>DPS-250AP</li>
+<li>MIP550D-5TC-V</li>
+<li>6870C-081A</li>
+<li>6870C-0532C</li>
+<li>6870C-0481A</li>
+<li>6870C-0370A</li>
+<li>6870C-0743A</li>
+<li>T315XW02 V0</li>
+<li>T400XW01 V5</li>
+<li>LC320WXN</li>
+<li>HV430FHB-N4D</li>
+<li>LC420WUN-SCA1</li>
+<li>LTA320AP05</li>
+<li>BOE Tripod E361035</li>
+<li>CHASIS CN-0016</li>
 </ul>
 </div>
 

@@ -2,30 +2,37 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Reparaciones Electrónicas</title>
+<title>Servicio Técnico Electrónico</title>
 
 <style>
 
 body{
-font-family:Arial;
+font-family: Arial;
 margin:0;
-background:#f4f4f4;
-text-align:center;
+background:#f4f6f9;
 }
 
 header{
-background:#111;
+background:#0b3d91;
 color:white;
-padding:20px;
+text-align:center;
+padding:30px;
 }
 
-.logo{
-width:140px;
+header img{
+width:120px;
 }
 
-.seccion{
+section{
 padding:40px;
+max-width:1200px;
+margin:auto;
+}
+
+h2{
+color:#0b3d91;
+text-align:center;
+margin-bottom:30px;
 }
 
 .categorias{
@@ -37,59 +44,85 @@ gap:20px;
 .card{
 background:white;
 border-radius:10px;
-box-shadow:0 3px 10px rgba(0,0,0,0.2);
-padding:15px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+overflow:hidden;
+text-align:center;
 }
 
 .card img{
 width:100%;
-border-radius:10px;
-height:180px;
+height:200px;
 object-fit:cover;
 }
 
-input{
-padding:12px;
-width:80%;
-max-width:400px;
-border-radius:8px;
-border:1px solid #ccc;
+.card p{
+padding:15px;
+}
+
+.buscador{
+text-align:center;
 margin-bottom:20px;
 }
 
-.tarjeta{
-background:white;
-margin:10px auto;
-padding:15px;
-border-radius:10px;
-max-width:500px;
-box-shadow:0 2px 5px rgba(0,0,0,0.2);
+.buscador input{
+width:60%;
+padding:10px;
+font-size:16px;
+border-radius:6px;
+border:1px solid #ccc;
 }
 
-.mapa{
+.lista-tarjetas{
+columns:3;
+}
+
+.lista-tarjetas p{
+background:white;
+margin:5px;
+padding:10px;
+border-radius:5px;
+box-shadow:0 2px 4px rgba(0,0,0,0.1);
+}
+
+iframe{
 width:100%;
 height:400px;
 border:0;
+border-radius:10px;
 }
 
 footer{
-background:#111;
+background:#0b3d91;
 color:white;
+text-align:center;
 padding:30px;
-margin-top:40px;
+font-size:20px;
 }
 
-.call{
+.call-btn{
 position:fixed;
 bottom:20px;
 right:20px;
+background:#28a745;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+font-size:18px;
+text-decoration:none;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
+
+.whatsapp-btn{
+position:fixed;
+bottom:80px;
+right:20px;
 background:#25D366;
 color:white;
-padding:18px;
-border-radius:50%;
-font-size:22px;
+padding:15px 20px;
+border-radius:50px;
+font-size:18px;
 text-decoration:none;
-box-shadow:0 0 10px rgba(0,0,0,0.3);
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
 }
 
 </style>
@@ -99,63 +132,71 @@ box-shadow:0 0 10px rgba(0,0,0,0.3);
 
 <header>
 
-<img src="logo.png" class="logo">
+<img src="https://cdn-icons-png.flaticon.com/512/1042/1042390.png">
 
 <h1>Servicio Técnico Electrónico</h1>
 
+<p>Reparación y Venta de Refacciones Electrónicas</p>
+
 </header>
 
+<section>
 
-<section class="seccion">
+<h2>Quiénes Somos</h2>
 
-<h2>¿Quiénes Somos?</h2>
-
-<p>
-
-Somos un servicio técnico especializado en reparación de aparatos electrónicos.  
-Reparamos juguetes montables, electrodomésticos, televisores, bocinas, herramientas eléctricas y tarjetas electrónicas.
-
-Nuestro objetivo es ayudarte a **ahorrar dinero reparando antes de comprar**.
-
+<p style="text-align:center;font-size:18px;">
+Somos un servicio técnico especializado en reparación de electrónicos, televisores,
+electrodomésticos y venta de tarjetas electrónicas. Nuestro objetivo es brindar
+soluciones rápidas, económicas y profesionales a nuestros clientes.
 </p>
 
 </section>
 
 
-<section class="seccion">
+<section>
 
-<h2>Servicios de Reparación</h2>
+<h2>Categorías de Servicio</h2>
 
 <div class="categorias">
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348">
+
+<img src="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3">
+
 <h3>Juguetes Montables</h3>
-<p>Reparación de motos infantiles, carros eléctricos, baterías, cargadores y tarjetas electrónicas.</p>
+
+<p>Reparación de motos infantiles, carros eléctricos, baterías y controladores.</p>
+
 </div>
 
 <div class="card">
+
 <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c">
+
 <h3>Electrodomésticos</h3>
-<p>Reparamos licuadoras, microondas, batidoras de brazo, extractores, cafeteras y más.</p>
+
+<p>Reparamos licuadoras, microondas, batidoras, extractores y más.</p>
+
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1">
-<h3>Televisores</h3>
-<p>Diagnóstico y reparación de pantallas LED, Smart TV, tarjetas de poder y mainboard.</p>
+
+<img src="https://images.unsplash.com/photo-1581093458791-9d42b0f3c9f4">
+
+<h3>Tarjetas Electrónicas</h3>
+
+<p>Venta y reparación de tarjetas Main, T-Con, fuentes de poder y tarjetas LED.</p>
+
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1585386959984-a41552231658">
-<h3>Bocinas</h3>
-<p>Reparación de bocinas bluetooth, amplificadores, fuentes de poder y tarjetas.</p>
-</div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1504148455328-c376907d081c">
-<h3>Herramientas</h3>
-<p>Reparación de taladros, pulidoras, cargadores, baterías y herramientas eléctricas.</p>
+<img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0">
+
+<h3>Herramientas Eléctricas</h3>
+
+<p>Reparación de taladros, rotomartillos, cargadores y herramientas eléctricas.</p>
+
 </div>
 
 </div>
@@ -163,77 +204,104 @@ Nuestro objetivo es ayudarte a **ahorrar dinero reparando antes de comprar**.
 </section>
 
 
+<section>
 
-<section class="seccion">
+<h2>Buscador de Tarjetas Electrónicas</h2>
 
-<h2>Catálogo de Tarjetas Electrónicas</h2>
+<div class="buscador">
 
-<input type="text" id="buscador" placeholder="Buscar tarjeta..." onkeyup="buscarTarjeta()">
+<input type="text" id="buscar" placeholder="Buscar tarjeta..." onkeyup="buscarTarjeta()">
 
-<div id="catalogo">
+</div>
 
-<div class="tarjeta">Tarjeta lavadora Whirlpool</div>
-<div class="tarjeta">Tarjeta lavadora Mabe</div>
-<div class="tarjeta">Tarjeta refrigerador Samsung</div>
-<div class="tarjeta">Tarjeta refrigerador LG</div>
-<div class="tarjeta">Tarjeta microondas</div>
-<div class="tarjeta">Tarjeta TV Samsung</div>
-<div class="tarjeta">Tarjeta TV LG</div>
-<div class="tarjeta">Tarjeta juguetes montables</div>
-<div class="tarjeta">Tarjeta bocinas bluetooth</div>
-<div class="tarjeta">Tarjeta herramientas eléctricas</div>
+<div class="lista-tarjetas" id="tarjetas">
+
+<p>CV950XH-C42</p>
+<p>TP,MS3393,PB818</p>
+<p>TP,MS3553PB819</p>
+<p>BN41-01785</p>
+<p>BN94-12812H</p>
+<p>BN94-09513A</p>
+<p>BN41-02663</p>
+<p>BN41-01938</p>
+<p>BN41-02378A</p>
+<p>BN41-01797</p>
+<p>CV3393BL-C</p>
+<p>CV3393BH-U32</p>
+<p>CV3553CH-C32</p>
+<p>PWB.MAIN.N7HK</p>
+<p>32E360MAIN</p>
+<p>PCBMAIN</p>
+<p>APS-282</p>
+<p>APS-283CH</p>
+<p>APS-243</p>
+<p>BN44-00468A</p>
+<p>BN44-00338B</p>
+<p>BN44-00442A</p>
+<p>DPS-250AP</p>
+<p>MIP550D-5TC-V</p>
+<p>6870C-081A</p>
+<p>6870C-0532C</p>
+<p>6870C-0481A</p>
+<p>6870C-0370A</p>
+<p>6870C-0743A</p>
+<p>T315XW02 V0</p>
+<p>T400XW01 V5</p>
+<p>LC320WXN</p>
+<p>HV430FHB-N4D</p>
+<p>LC420WUN-SCA1</p>
+<p>LTA320AP05</p>
+<p>BOE Tripod E361035</p>
+<p>CHASIS CN-0016</p>
 
 </div>
 
 </section>
 
 
-
-<section class="seccion">
+<section>
 
 <h2>Ubicación</h2>
 
-<iframe class="mapa"
-src="https://maps.google.com/maps?q=https://maps.app.goo.gl/35b9xrcCanRiSmVr6&output=embed">
-</iframe>
+<iframe src="https://maps.google.com/maps?q=19.4326,-99.1332&z=15&output=embed"></iframe>
 
 </section>
 
 
 <footer>
 
-<h2>Antes de comprar… ¡Repáralo!</h2>
+<strong>ANTES DE COMPRAR, REPÁRALO</strong><br><br>
 
-<p>
-
-📞 Llámanos: <b>5614585526</b>  
-<br><br>
-💬 Cotizaciones: <b>5575121423</b>
-
-</p>
+📞 Llámanos: 5614585526<br>
+💬 Cotiza por WhatsApp: 5575121423
 
 </footer>
 
 
-<a class="call" href="tel:5614585526">📞</a>
+<a class="call-btn" href="tel:5614585526">📞 Llamar</a>
+
+<a class="whatsapp-btn" href="https://wa.me/525575121423">💬 WhatsApp</a>
 
 
 <script>
 
 function buscarTarjeta(){
 
-let input=document.getElementById("buscador").value.toLowerCase()
-
-let tarjetas=document.getElementsByClassName("tarjeta")
+let input=document.getElementById("buscar").value.toLowerCase();
+let tarjetas=document.getElementById("tarjetas").getElementsByTagName("p");
 
 for(let i=0;i<tarjetas.length;i++){
 
-let texto=tarjetas[i].innerText.toLowerCase()
+let texto=tarjetas[i].textContent.toLowerCase();
 
 if(texto.includes(input)){
-tarjetas[i].style.display="block"
+
+tarjetas[i].style.display="block";
+
 }else{
-tarjetas[i].style.display="none"
+
+tarjetas[i].style.display="none";
+
 }
 
 }

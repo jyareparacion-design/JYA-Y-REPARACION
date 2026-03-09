@@ -4,86 +4,158 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>JYA Reparación | Electrodomésticos, TV, Herramientas en Coyotepec</title>
+<title>JYA Reparación | Electrónica y Electrodomésticos en Coyotepec</title>
 
-<meta name="description" content="Reparación de electrodomésticos, televisores, herramientas, bocinas y juguetes en Coyotepec Estado de México. Servicio rápido y confiable.">
+<meta name="description" content="JYA Reparación en Coyotepec Estado de México. Reparación de electrodomésticos, televisores, bocinas, herramientas eléctricas y juguetes eléctricos. Servicio profesional y económico.">
 
 <style>
 
 body{
-font-family: Arial;
+font-family:Arial;
 margin:0;
-background:#f4f4f4;
-text-align:center;
+background:#f5f5f5;
 }
 
 header{
-background:#0a4da3;
+background:#0f172a;
 color:white;
-padding:30px;
+padding:20px;
+text-align:center;
 }
 
 .logo{
+width:90px;
+}
+
+h1{
+margin:10px;
+}
+
+.hero{
+background:url('https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc') center/cover;
+color:white;
+padding:80px 20px;
+text-align:center;
+}
+
+.hero h2{
 font-size:35px;
-font-weight:bold;
 }
 
-.sub{
-font-size:18px;
-margin-top:5px;
+.section{
+padding:50px 20px;
+text-align:center;
 }
 
-section{
-padding:40px 20px;
-}
-
-.servicios{
+.catalogo{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:20px;
-max-width:900px;
-margin:auto;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+padding:20px;
 }
 
 .card{
 background:white;
-padding:20px;
-border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,0.1);
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.15);
+overflow:hidden;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
 }
 
 .card h3{
-color:#0a4da3;
+padding:10px;
 }
 
-.boton{
-display:inline-block;
-padding:15px 25px;
-margin:10px;
-background:#0a4da3;
-color:white;
-text-decoration:none;
+.card p{
+padding:0 15px 15px;
+}
+
+.buscador{
+margin:30px;
+}
+
+input{
+padding:12px;
+width:300px;
 border-radius:8px;
-font-weight:bold;
-}
-
-.whatsapp{
-background:#25D366;
+border:1px solid gray;
 }
 
 .mapa{
-max-width:900px;
-margin:auto;
+margin-top:40px;
+}
+
+iframe{
+width:100%;
+height:400px;
+border:0;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+font-size:22px;
+padding:15px;
+border-radius:50%;
+text-decoration:none;
+}
+
+.llamar{
+position:fixed;
+bottom:90px;
+right:20px;
+background:#2563eb;
+color:white;
+font-size:22px;
+padding:15px;
+border-radius:50%;
+text-decoration:none;
 }
 
 footer{
-background:#222;
+background:#0f172a;
 color:white;
+text-align:center;
 padding:20px;
 margin-top:40px;
 }
 
 </style>
+
+<script>
+
+function buscar(){
+let input=document.getElementById("busqueda").value.toLowerCase()
+let cards=document.getElementsByClassName("card")
+
+for(let i=0;i<cards.length;i++){
+
+let texto=cards[i].innerText.toLowerCase()
+
+if(texto.includes(input)){
+cards[i].style.display="block"
+}else{
+cards[i].style.display="none"
+}
+
+}
+
+}
+
+</script>
 
 </head>
 
@@ -91,95 +163,101 @@ margin-top:40px;
 
 <header>
 
-<div class="logo">JYA Reparación</div>
+<img class="logo" src="logo.png">
 
-<div class="sub">
-Electrodomésticos • TV • Herramientas • Bocinas • Juguetes
-</div>
+<h1>JYA Reparación</h1>
+
+<p>Electrónica • Electrodomésticos • Herramientas • Juguetes</p>
 
 </header>
 
-<section>
+<section class="hero">
 
-<h2>Servicio de Reparación en Coyotepec</h2>
+<h2>Servicio Profesional en Coyotepec</h2>
 
-<p>
-Reparamos electrodomésticos, televisores, herramientas eléctricas, bocinas y juguetes.  
-Servicio rápido y confiable en Coyotepec Estado de México.
-</p>
-
-<a class="boton whatsapp" href="https://wa.me/5210000000000">
-WhatsApp
-</a>
-
-<a class="boton" href="tel:+5210000000000">
-Llamar
-</a>
+<p>Reparación rápida y económica</p>
 
 </section>
 
-<section>
 
-<h2>Nuestros Servicios</h2>
+<section class="section">
 
-<div class="servicios">
+<h2>Buscar Servicio</h2>
+
+<div class="buscador">
+<input type="text" id="busqueda" onkeyup="buscar()" placeholder="Buscar reparación...">
+</div>
+
+</section>
+
+
+<section class="catalogo">
 
 <div class="card">
+<img src="https://images.unsplash.com/photo-1593784991095-a205069470b6">
 <h3>Reparación de Televisores</h3>
-<p>LCD, LED, Smart TV.</p>
+<p>Smart TV, pantallas LED, LCD y Plasma.</p>
 </div>
 
 <div class="card">
+<img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad">
+<h3>Reparación de Bocinas</h3>
+<p>Bocinas bluetooth, amplificadores y audio.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952">
 <h3>Electrodomésticos</h3>
-<p>Licuadoras, microondas, ventiladores, etc.</p>
+<p>Licuadoras, microondas, ventiladores y más.</p>
 </div>
 
 <div class="card">
-<h3>Herramientas</h3>
-<p>Taladros, pulidoras y más.</p>
+<img src="https://images.unsplash.com/photo-1581147036324-c9a9f6b7e3b4">
+<h3>Herramientas Eléctricas</h3>
+<p>Taladros, pulidoras, sierras y herramientas.</p>
 </div>
 
 <div class="card">
-<h3>Bocinas</h3>
-<p>Reparación de bocinas y audio.</p>
-</div>
-
-<div class="card">
-<h3>Juguetes</h3>
-<p>Carros eléctricos, juguetes electrónicos.</p>
-</div>
-
+<img src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db">
+<h3>Juguetes Eléctricos</h3>
+<p>Carros, motos, montables y juguetes electrónicos.</p>
 </div>
 
 </section>
 
-<section>
+
+
+<section class="section">
 
 <h2>Ubicación</h2>
 
-<p>
-Durango Manzana 030, San Juan,  
-54668 Coyotepec, Estado de México
-</p>
+<p>Durango Manzana 030, San Juan, 54668 Coyotepec, Méx.</p>
 
 <div class="mapa">
 
 <iframe
-src="https://www.google.com/maps?q=Durango%20Manzana%20030%20San%20Juan%2054668%20Coyotepec%20Estado%20de%20Mexico&output=embed"
-width="100%"
-height="350"
-style="border:0">
+src="https://www.google.com/maps?q=Durango+Manzana+030+San+Juan+Coyotepec+Estado+de+Mexico&output=embed">
 </iframe>
 
 </div>
 
 </section>
 
+
+
+<a class="whatsapp" href="https://wa.me/521XXXXXXXXXX">💬</a>
+
+<a class="llamar" href="tel:+52XXXXXXXXXX">📞</a>
+
+
+
 <footer>
 
 <p>JYA Reparación</p>
 
-<p>Servicio en Coyotepec y alrededores</p>
+<p>Coyotepec Estado de México</p>
+
+<p>Electrónica • Electrodomésticos • Herramientas • Juguetes</p>
 
 </footer>
 

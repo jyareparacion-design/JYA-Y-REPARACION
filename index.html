@@ -1,112 +1,107 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>JYA Reparación | Electrónicos en Coyotepec</title>
+<title>JYA Reparación | Electrodomésticos, TV, Herramientas y Juguetes en Coyotepec</title>
 
-<meta name="description" content="Reparación de electrónicos en Coyotepec. Arreglamos televisiones, bocinas, electrodomésticos, herramientas eléctricas, juguetes montables, carros eléctricos y tarjetas electrónicas.">
+<meta name="description" content="JYA Reparación en Coyotepec. Reparación de electrodomésticos, TV, bocinas, herramientas eléctricas y juguetes montables. Servicio técnico confiable.">
 
 <style>
 
 body{
 font-family:Arial;
 margin:0;
-background:#f4f6f8;
-color:#333;
+background:#f5f5f5;
 }
 
 header{
-background:#0d1b2a;
+background:#0f172a;
 color:white;
+padding:20px;
 text-align:center;
-padding:25px;
 }
 
-header img{
+.logo{
 width:120px;
+margin-bottom:10px;
 }
 
-h1{
-margin:10px 0;
+nav{
+background:#1e293b;
+padding:12px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.hero{
+background:url("https://images.unsplash.com/photo-1581092918056-0c4c3acd3789") center/cover;
+color:white;
+padding:80px 20px;
+text-align:center;
 }
 
 section{
-padding:40px 20px;
+padding:40px;
 max-width:1100px;
 margin:auto;
 }
 
-.servicios{
+.cards{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
 }
 
 .card{
 background:white;
 border-radius:10px;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
 overflow:hidden;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
 .card img{
 width:100%;
-height:160px;
+height:180px;
 object-fit:cover;
 }
 
 .card h3{
-margin:10px;
+padding:10px;
 }
 
-.catalogo{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:20px;
+.card p{
+padding:0 10px 15px;
+}
+
+.catalogo input{
+width:100%;
+padding:12px;
+font-size:16px;
+margin-bottom:20px;
 }
 
 .tarjeta{
 background:white;
-padding:10px;
+padding:15px;
+margin-bottom:10px;
 border-radius:8px;
-text-align:center;
-box-shadow:0 2px 6px rgba(0,0,0,0.1);
-}
-
-.tarjeta img{
-width:100%;
-height:140px;
-object-fit:cover;
-border-radius:6px;
-}
-
-input{
-width:100%;
-padding:12px;
-margin-bottom:20px;
-border-radius:6px;
-border:1px solid #ccc;
-}
-
-.boton{
-display:inline-block;
-background:#1d3557;
-color:white;
-padding:12px 20px;
-border-radius:6px;
-text-decoration:none;
 }
 
 footer{
-background:#0d1b2a;
+background:#0f172a;
 color:white;
 text-align:center;
 padding:20px;
 }
-
-/* BOTONES FLOTANTES */
 
 .whatsapp{
 position:fixed;
@@ -114,22 +109,11 @@ bottom:20px;
 right:20px;
 background:#25D366;
 color:white;
-padding:15px;
-border-radius:50%;
-font-size:20px;
+padding:15px 18px;
+border-radius:50px;
 text-decoration:none;
-}
-
-.llamar{
-position:fixed;
-bottom:90px;
-right:20px;
-background:#1d3557;
-color:white;
-padding:15px;
-border-radius:50%;
-font-size:20px;
-text-decoration:none;
+font-weight:bold;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
 }
 
 </style>
@@ -139,137 +123,145 @@ text-decoration:none;
 
 <header>
 
-<img src="logo.png">
+<img src="logo.png" class="logo">
 
 <h1>JYA Reparación</h1>
 
-<p>Reparación de electrónicos en Coyotepec</p>
+<p>Electrodomésticos • TV • Herramientas • Juguetes</p>
 
 </header>
 
-<section>
+<nav>
+
+<a href="#servicios">Servicios</a>
+<a href="#catalogo">Catálogo</a>
+<a href="#ubicacion">Ubicación</a>
+
+</nav>
+
+<section class="hero">
+
+<h2>Servicio Técnico Profesional en Coyotepec</h2>
+
+<p>Reparamos electrodomésticos, televisiones, herramientas eléctricas, bocinas y juguetes montables.</p>
+
+</section>
+
+<section id="servicios">
 
 <h2>Servicios</h2>
 
-<div class="servicios">
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952">
+<h3>Electrodomésticos</h3>
+<p>Reparación de licuadoras, microondas, cafeteras, ventiladores y más.</p>
+</div>
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1593784991095-a205069470b6">
-<h3>Reparación de Televisores</h3>
+<h3>Televisiones</h3>
+<p>Reparamos Smart TV, pantallas LED, LCD y fallas de imagen.</p>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1585386959984-a41552231658">
-<h3>Bocinas y Audio</h3>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758">
-<h3>Electrodomésticos</h3>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1602526219042-6e3d4c9b2e39">
+<img src="https://images.unsplash.com/photo-1586864387789-628af9feed72">
 <h3>Herramientas Eléctricas</h3>
+<p>Taladros, rotomartillos, pulidoras y más.</p>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1606813909025-77d0cda3c274">
-<h3>Juguetes Eléctricos</h3>
+<img src="https://images.unsplash.com/photo-1606813909025-1b9a3170f548">
+<h3>Bocinas y Audio</h3>
+<p>Reparación de bocinas bluetooth, sonido y amplificadores.</p>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1606813909110-b6e3b4a4e1c8">
-<h3>Carros y Motos Montables</h3>
+<img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348">
+<h3>Juguetes Montables</h3>
+<p>Carros eléctricos, motos infantiles, baterías y tarjetas.</p>
 </div>
 
 </div>
 
 </section>
 
-<section>
+<section id="catalogo" class="catalogo">
 
-<h2>Catálogo de Tarjetas Electrónicas</h2>
+<h2>Catálogo de Tarjetas</h2>
 
 <input type="text" id="buscar" placeholder="Buscar tarjeta..." onkeyup="buscarTarjeta()">
 
-<div class="catalogo" id="catalogo">
+<div id="listaTarjetas">
 
 <div class="tarjeta">
-<img src="https://m.media-amazon.com/images/I/61P8L0B4pQL.jpg">
-<p>Tarjeta Lavadora</p>
+<h3>Tarjeta Montable 12V</h3>
+<p>Compatible con carros eléctricos infantiles.</p>
 </div>
 
 <div class="tarjeta">
-<img src="https://m.media-amazon.com/images/I/61K0U4p9yZL.jpg">
-<p>Tarjeta TV</p>
+<h3>Control remoto 2.4G</h3>
+<p>Control para carros montables infantiles.</p>
 </div>
 
 <div class="tarjeta">
-<img src="https://m.media-amazon.com/images/I/71D1L6k8GkL.jpg">
-<p>Tarjeta Bocina</p>
-</div>
-
-<div class="tarjeta">
-<img src="https://m.media-amazon.com/images/I/61Hk9J3uYpL.jpg">
-<p>Tarjeta Microondas</p>
-</div>
-
-<div class="tarjeta">
-<img src="https://m.media-amazon.com/images/I/61y8W5p6EIL.jpg">
-<p>Tarjeta Herramienta</p>
+<h3>Módulo Bluetooth Bocinas</h3>
+<p>Tarjeta bluetooth para bocinas y audio.</p>
 </div>
 
 </div>
 
 </section>
 
-<section>
+<section id="ubicacion">
 
 <h2>Ubicación</h2>
 
-<p>Durango Manzana 030, San Juan, 54668 Coyotepec, México</p>
+<p>
+Durango Manzana 030,  
+San Juan, 54668  
+Coyotepec, Estado de México
+</p>
 
-<iframe src="https://maps.google.com/maps?q=https://maps.app.goo.gl/35b9xrcCanRiSmVr6&output=embed"
-width="100%" height="300"></iframe>
-
-</section>
-
-<section>
-
-<h2>Contacto</h2>
-
-<p>Contáctanos para cotizar tu reparación</p>
-
-<a class="boton" href="https://wa.me/521XXXXXXXXXX">Enviar WhatsApp</a>
+<iframe
+src="https://www.google.com/maps?q=https://maps.app.goo.gl/35b9xrcCanRiSmVr6&output=embed"
+width="100%"
+height="350"
+style="border:0;">
+</iframe>
 
 </section>
 
 <footer>
 
-<p>© 2025 JYA Reparación | Coyotepec</p>
+<p>JYA Reparación © 2026</p>
+
+<p>Servicio en Coyotepec y alrededores</p>
 
 </footer>
 
-<a class="whatsapp" href="https://wa.me/521XXXXXXXXXX">💬</a>
+<a class="whatsapp" href="https://wa.me/525500000000">
 
-<a class="llamar" href="tel:+52XXXXXXXXXX">📞</a>
+WhatsApp
+
+</a>
 
 <script>
 
 function buscarTarjeta(){
 
-let input=document.getElementById("buscar").value.toLowerCase()
+let input=document.getElementById("buscar").value.toLowerCase();
 
-let tarjetas=document.querySelectorAll(".tarjeta")
+let tarjetas=document.querySelectorAll(".tarjeta");
 
-tarjetas.forEach(t=>{
+tarjetas.forEach(function(t){
 
-let texto=t.innerText.toLowerCase()
+let texto=t.innerText.toLowerCase();
 
-t.style.display=texto.includes(input)?"block":"none"
+t.style.display=texto.includes(input) ? "block":"none";
 
-})
+});
 
 }
 

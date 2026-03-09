@@ -2,18 +2,21 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Servicio Técnico Electrónico</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Servicio Electrónico Especializado</title>
 
 <style>
 
 body{
-font-family: Arial;
+font-family:Arial;
 margin:0;
-background:#f4f6f9;
+background:#f4f4f4;
+color:#333;
 }
 
 header{
-background:#0b3d91;
+background:#111;
 color:white;
 text-align:center;
 padding:30px;
@@ -30,12 +33,11 @@ margin:auto;
 }
 
 h2{
-color:#0b3d91;
 text-align:center;
 margin-bottom:30px;
 }
 
-.categorias{
+.grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
@@ -44,9 +46,8 @@ gap:20px;
 .card{
 background:white;
 border-radius:10px;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
 overflow:hidden;
-text-align:center;
+box-shadow:0 4px 10px rgba(0,0,0,.1);
 }
 
 .card img{
@@ -55,33 +56,30 @@ height:200px;
 object-fit:cover;
 }
 
-.card p{
-padding:15px;
-}
-
-.buscador{
-text-align:center;
-margin-bottom:20px;
-}
-
-.buscador input{
-width:60%;
+.card h3{
 padding:10px;
-font-size:16px;
+margin:0;
+}
+
+.card p{
+padding:0 10px 15px;
+}
+
+input{
+width:100%;
+padding:12px;
+margin-bottom:20px;
 border-radius:6px;
 border:1px solid #ccc;
+font-size:16px;
 }
 
-.lista-tarjetas{
-columns:3;
-}
-
-.lista-tarjetas p{
+.tarjeta{
 background:white;
-margin:5px;
 padding:10px;
+margin:5px 0;
 border-radius:5px;
-box-shadow:0 2px 4px rgba(0,0,0,0.1);
+box-shadow:0 2px 5px rgba(0,0,0,.1);
 }
 
 iframe{
@@ -92,37 +90,35 @@ border-radius:10px;
 }
 
 footer{
-background:#0b3d91;
+background:#111;
 color:white;
 text-align:center;
 padding:30px;
-font-size:20px;
+margin-top:40px;
 }
 
-.call-btn{
+.whatsapp{
 position:fixed;
 bottom:20px;
 right:20px;
-background:#28a745;
-color:white;
-padding:15px 20px;
-border-radius:50px;
-font-size:18px;
-text-decoration:none;
-box-shadow:0 4px 10px rgba(0,0,0,0.3);
-}
-
-.whatsapp-btn{
-position:fixed;
-bottom:80px;
-right:20px;
 background:#25D366;
 color:white;
-padding:15px 20px;
-border-radius:50px;
-font-size:18px;
+font-size:22px;
+padding:15px 18px;
+border-radius:50%;
 text-decoration:none;
-box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
+
+.call{
+position:fixed;
+bottom:20px;
+left:20px;
+background:#007BFF;
+color:white;
+font-size:22px;
+padding:15px 18px;
+border-radius:50%;
+text-decoration:none;
 }
 
 </style>
@@ -132,22 +128,22 @@ box-shadow:0 4px 10px rgba(0,0,0,0.3);
 
 <header>
 
-<img src="https://cdn-icons-png.flaticon.com/512/1042/1042390.png">
+<img src="https://cdn-icons-png.flaticon.com/512/1048/1048953.png">
 
-<h1>Servicio Técnico Electrónico</h1>
+<h1>Servicio Electrónico Especializado</h1>
 
-<p>Reparación y Venta de Refacciones Electrónicas</p>
+<p>Reparación • Venta de refacciones • Diagnóstico profesional</p>
 
 </header>
 
+
 <section>
 
-<h2>Quiénes Somos</h2>
+<h2>¿Quiénes Somos?</h2>
 
-<p style="text-align:center;font-size:18px;">
-Somos un servicio técnico especializado en reparación de electrónicos, televisores,
-electrodomésticos y venta de tarjetas electrónicas. Nuestro objetivo es brindar
-soluciones rápidas, económicas y profesionales a nuestros clientes.
+<p style="text-align:center;max-width:800px;margin:auto;">
+Somos un servicio técnico especializado en reparación electrónica y venta de refacciones para televisores y electrodomésticos.
+Ofrecemos diagnóstico profesional, reparación confiable y venta de tarjetas electrónicas para diferentes marcas y modelos.
 </p>
 
 </section>
@@ -157,46 +153,42 @@ soluciones rápidas, económicas y profesionales a nuestros clientes.
 
 <h2>Categorías de Servicio</h2>
 
-<div class="categorias">
+<div class="grid">
 
 <div class="card">
-
-<img src="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3">
-
+<img src="https://images.unsplash.com/photo-1606813909023-1c1c1c7c0a12">
 <h3>Juguetes Montables</h3>
-
-<p>Reparación de motos infantiles, carros eléctricos, baterías y controladores.</p>
-
+<p>Reparación de motos infantiles eléctricas, autos montables y sistemas de control.</p>
 </div>
 
 <div class="card">
-
 <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c">
-
-<h3>Electrodomésticos</h3>
-
-<p>Reparamos licuadoras, microondas, batidoras, extractores y más.</p>
-
+<h3>Licuadoras</h3>
+<p>Reparación de motores, tarjetas electrónicas y controles.</p>
 </div>
 
 <div class="card">
-
-<img src="https://images.unsplash.com/photo-1581093458791-9d42b0f3c9f4">
-
-<h3>Tarjetas Electrónicas</h3>
-
-<p>Venta y reparación de tarjetas Main, T-Con, fuentes de poder y tarjetas LED.</p>
-
+<img src="https://images.unsplash.com/photo-1585659722983-3a675dabf23d">
+<h3>Microondas</h3>
+<p>Servicio a microondas, magnetrones, tarjetas y sistemas eléctricos.</p>
 </div>
 
 <div class="card">
+<img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95">
+<h3>Batidoras de Brazo</h3>
+<p>Reparación de batidoras manuales, motor y electrónica.</p>
+</div>
 
-<img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952">
+<h3>Extractores</h3>
+<p>Servicio y reparación de extractores y ventilación.</p>
+</div>
 
-<h3>Herramientas Eléctricas</h3>
-
-<p>Reparación de taladros, rotomartillos, cargadores y herramientas eléctricas.</p>
-
+<div class="card">
+<img src="https://images.unsplash.com/photo-1593784991095-a205069470b6">
+<h3>Televisores</h3>
+<p>Reparación de pantallas, tarjetas main, fuentes de poder y T-CON.</p>
 </div>
 
 </div>
@@ -206,53 +198,49 @@ soluciones rápidas, económicas y profesionales a nuestros clientes.
 
 <section>
 
-<h2>Buscador de Tarjetas Electrónicas</h2>
-
-<div class="buscador">
+<h2>Buscador de Tarjetas Main</h2>
 
 <input type="text" id="buscar" placeholder="Buscar tarjeta..." onkeyup="buscarTarjeta()">
 
-</div>
+<div id="lista">
 
-<div class="lista-tarjetas" id="tarjetas">
-
-<p>CV950XH-C42</p>
-<p>TP,MS3393,PB818</p>
-<p>TP,MS3553PB819</p>
-<p>BN41-01785</p>
-<p>BN94-12812H</p>
-<p>BN94-09513A</p>
-<p>BN41-02663</p>
-<p>BN41-01938</p>
-<p>BN41-02378A</p>
-<p>BN41-01797</p>
-<p>CV3393BL-C</p>
-<p>CV3393BH-U32</p>
-<p>CV3553CH-C32</p>
-<p>PWB.MAIN.N7HK</p>
-<p>32E360MAIN</p>
-<p>PCBMAIN</p>
-<p>APS-282</p>
-<p>APS-283CH</p>
-<p>APS-243</p>
-<p>BN44-00468A</p>
-<p>BN44-00338B</p>
-<p>BN44-00442A</p>
-<p>DPS-250AP</p>
-<p>MIP550D-5TC-V</p>
-<p>6870C-081A</p>
-<p>6870C-0532C</p>
-<p>6870C-0481A</p>
-<p>6870C-0370A</p>
-<p>6870C-0743A</p>
-<p>T315XW02 V0</p>
-<p>T400XW01 V5</p>
-<p>LC320WXN</p>
-<p>HV430FHB-N4D</p>
-<p>LC420WUN-SCA1</p>
-<p>LTA320AP05</p>
-<p>BOE Tripod E361035</p>
-<p>CHASIS CN-0016</p>
+<div class="tarjeta">CV950XH-C42</div>
+<div class="tarjeta">TP.MS3393.PB818</div>
+<div class="tarjeta">TP.MS3553PB819</div>
+<div class="tarjeta">BN41-01785</div>
+<div class="tarjeta">BN94-12812H</div>
+<div class="tarjeta">BN94-09513A</div>
+<div class="tarjeta">BN41-02663</div>
+<div class="tarjeta">BN41-01938</div>
+<div class="tarjeta">BN41-02378A</div>
+<div class="tarjeta">BN41-01797</div>
+<div class="tarjeta">CV3393BL-C</div>
+<div class="tarjeta">CV3393BH-U32</div>
+<div class="tarjeta">CV3553CH-C32</div>
+<div class="tarjeta">PWB.MAIN.N7HK</div>
+<div class="tarjeta">32E360MAIN</div>
+<div class="tarjeta">PCBMAIN</div>
+<div class="tarjeta">APS-282</div>
+<div class="tarjeta">APS-283CH</div>
+<div class="tarjeta">APS-243</div>
+<div class="tarjeta">BN44-00468A</div>
+<div class="tarjeta">BN44-00338B</div>
+<div class="tarjeta">BN44-00442A</div>
+<div class="tarjeta">DPS-250AP</div>
+<div class="tarjeta">MIP550D-5TC-V</div>
+<div class="tarjeta">6870C-081A</div>
+<div class="tarjeta">6870C-0532C</div>
+<div class="tarjeta">6870C-0481A</div>
+<div class="tarjeta">6870C-0370A</div>
+<div class="tarjeta">6870C-0743A</div>
+<div class="tarjeta">T315XW02 V0</div>
+<div class="tarjeta">T400XW01 V5</div>
+<div class="tarjeta">LC320WXN</div>
+<div class="tarjeta">HV430FHB-N4D</div>
+<div class="tarjeta">LC420WUN-SCA1</div>
+<div class="tarjeta">LTA320AP05</div>
+<div class="tarjeta">BOE Tripod E361035</div>
+<div class="tarjeta">CHASIS CN-0016</div>
 
 </div>
 
@@ -263,24 +251,27 @@ soluciones rápidas, económicas y profesionales a nuestros clientes.
 
 <h2>Ubicación</h2>
 
-<iframe src="https://maps.google.com/maps?q=19.4326,-99.1332&z=15&output=embed"></iframe>
+<iframe
+src="https://www.google.com/maps?q=https://maps.app.goo.gl/35b9xrcCanRiSmVr6&output=embed">
+</iframe>
 
 </section>
 
 
 <footer>
 
-<strong>ANTES DE COMPRAR, REPÁRALO</strong><br><br>
+<h2>ANTES DE COMPRAR, REPÁRALO</h2>
 
-📞 Llámanos: 5614585526<br>
-💬 Cotiza por WhatsApp: 5575121423
+<p>📞 Llámanos: 5614585526</p>
+
+<p>💬 Cotiza por WhatsApp: 5575121423</p>
 
 </footer>
 
 
-<a class="call-btn" href="tel:5614585526">📞 Llamar</a>
+<a class="whatsapp" href="https://wa.me/525575121423">💬</a>
 
-<a class="whatsapp-btn" href="https://wa.me/525575121423">💬 WhatsApp</a>
+<a class="call" href="tel:5614585526">📞</a>
 
 
 <script>
@@ -288,20 +279,16 @@ soluciones rápidas, económicas y profesionales a nuestros clientes.
 function buscarTarjeta(){
 
 let input=document.getElementById("buscar").value.toLowerCase();
-let tarjetas=document.getElementById("tarjetas").getElementsByTagName("p");
+let lista=document.getElementById("lista").getElementsByClassName("tarjeta");
 
-for(let i=0;i<tarjetas.length;i++){
+for(let i=0;i<lista.length;i++){
 
-let texto=tarjetas[i].textContent.toLowerCase();
+let texto=lista[i].innerText.toLowerCase();
 
 if(texto.includes(input)){
-
-tarjetas[i].style.display="block";
-
+lista[i].style.display="";
 }else{
-
-tarjetas[i].style.display="none";
-
+lista[i].style.display="none";
 }
 
 }
